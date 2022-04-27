@@ -48,13 +48,16 @@ require_once('operations/deleteRecord.php');
                         <a href="?type=delete&id=<?php echo $list['id']?>" class="text-danger"><i class="fa fa-fw fa-trash"></i> Delete</a>
                      </td>
                   </tr>
-				  <?php 
-				  $id++;
-				  } } else {?>
+		  <?php 
+		    $id++;
+		    } } else {
+		   ?>
                   <tr>
                      <td colspan="6" align="center">No Records Found!</td>
                   </tr>
-				  <?php } ?>
+		  <?php 
+			} 
+		   ?>
                </tbody>
             </table>
          </div>
